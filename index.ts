@@ -1,8 +1,5 @@
-/// <reference path="./typings/index.d.ts"/>
-
 import {add} from './libs/utils';
 import * as express from 'express';
-import {Server} from "http";
 
 const app: express.Application = express();
 
@@ -18,6 +15,6 @@ app.get('/add/:x/:y', (req: AddRequest, res: express.Response) => {
     res.status(200).json(add(parseFloat(req.params.x), parseFloat(req.params.y)));
 });
 
-const server: Server = app.listen(8080, () => {
+const server = app.listen(8080, () => {
     console.log('> Server is listening on port ' + server.address().port);
 });
