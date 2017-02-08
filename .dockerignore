@@ -1,0 +1,5 @@
+.DS_STORE
+.idea/
+typings/
+node_modules/
+test/
