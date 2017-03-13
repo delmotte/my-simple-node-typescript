@@ -1,7 +1,7 @@
 {
   "name": "my-simple-node-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "An amazing starter kit for using typescript with node",
   "main": "index.js",
   "scripts": {
     "prestart": "./node_modules/.bin/tsc index.ts",
@@ -11,7 +11,7 @@
     "pretest": "./node_modules/.bin/tsc test/*.spec.ts",
     "test": "./node_modules/.bin/mocha"
   },
-  "author": "",
+  "author": "Jean-Yves DELMOTTE <delmotte.jy@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "express": "^4.14.1",
